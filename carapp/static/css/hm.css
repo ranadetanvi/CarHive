@@ -1,0 +1,432 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1a1a2e;
+    color: white;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+}
+
+.search-container input,
+.search-container select,
+.search-container button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-container button {
+    background: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Background and Color Settings */
+body {
+    color: #222;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(135deg, #003D73, #002652);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #102540, #071725);
+}
+
+/* Navbar */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F4A900;
+    text-shadow: 0 0 10px rgba(244, 169, 0, 0.8);
+}
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+/* Search Input & Dropdown */
+#search-bar, select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 250px;
+}
+
+#search-bar:focus, select:focus {
+    border-color: #F4A900;
+    box-shadow: 0 0 5px rgba(244, 169, 0, 0.8);
+}
+
+/* Search Button */
+button {
+    padding: 12px 20px;
+    background-color: #F4A900;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #D89300;
+    transform: scale(1.05);
+}
+
+/* Featured Cars */
+.featured-cars {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Car Grid */
+.car-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Car Cards */
+.car-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 300px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .car-card {
+    background: #1e252d;
+    color: white;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .search-container{
+    background-color: black;
+}
+
+.dark-mode .dropdown-options{
+    color: black;
+}
+
+.dark-mode .custom-option{
+    color: black;
+}
+/* Car Image */
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #003D73, #002652);
+    color: white;
+    margin-top: 30px;
+}
+
+.dark-mode footer {
+    background: linear-gradient(135deg, #102540, #071725);
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 22px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.social-icons a:hover {
+    color: #F4A900;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 70px;
+    padding: 0 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.dark-mode .hero {
+    background: rgba(20, 20, 20, 0.9);
+    color: white;
+}
+
+.dark-mode .hero h2 {
+    color: #F4A900;
+}
+
+.dark-mode .hero p {
+    color: #ddd;
+}
+
+/* Call-to-Action Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #F4A900;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background: #D89300;
+    transform: scale(1.05);
+}
+
+.dark-mode .btn {
+    background: #D89300;
+    color: white;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    background: #bbb;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle-switch::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.dark-mode .toggle-switch {
+    background: #555;
+}
+
+.dark-mode .toggle-switch::before {
+    left: 26px;
+    background: #00E6E6;
+}
+
+
+.custom-dropdown {
+    position: relative;
+    width: 250px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.selected-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dark-mode .search-container{
+    color: black;
+}
+
+.selected-option img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.dropdown-options {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-options li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dropdown-options li:hover {
+    background: #f4a900;
+    color: white;
+}
+
+.dropdown-options img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a2e;
+    color: white;
+    margin-top: 50px;
+}
