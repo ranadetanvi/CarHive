@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Sent</title>
+    <link rel="stylesheet" href="{% static 'carapp/css/Contact.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully. We will contact you soon.</p>
+        <a href="{% url 'home' %}">Go back to homepage</a>
+    </div>
+</body>
+</html>
