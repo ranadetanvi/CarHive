@@ -252,6 +252,21 @@
     <footer>
         <p>&copy; 2025 Car Hive. All rights reserved.</p>
     </footer>
+
+    <script>
+                // Inside hm2.js or add at bottom of HTML
+        document.addEventListener('DOMContentLoaded', function () {
+            const togglePassword = document.getElementById("togglePassword");
+            const password = document.getElementById("password");
+
+            togglePassword.addEventListener("click", function () {
+                const type = password.getAttribute("type") === "password" ? "text" : "password";
+                password.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+            });
+        });
+    </script>
     <script src="hm2.js"></script>
 </body>
 </html>

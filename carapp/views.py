@@ -58,16 +58,14 @@ def signup_view(request):
 
     return render(request, 'carapp/signup.html')
 
-def login_view(request):
-    if request.method == 'POST':
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-
-        user = authenticate(request, username=email, password=password)
+def user_login(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('home')  # redirect to home or dashboard
+            return redirect('home')  # redirect to homepage
         else:
-            messages.error(request, 'Invalid email or password.')
-    
-    return render(request, 'carapp/login.html')
+            messages.error(request, "Invalid username or password")
+    return render(request, "carapp/login.html")
